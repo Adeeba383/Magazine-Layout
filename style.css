@@ -1,0 +1,187 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Baskervville, serif;
+    color: rgb(245, 212, 180);
+    background-color: rgb(68, 65, 66);
+}
+
+.topcorners p{
+    font-size: 20px;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 10px;
+}
+.left {
+    justify-self: start;
+}
+.right {
+    justify-self: end;
+}
+.heading{
+    margin-top: 5rem;
+    font-family: Anton, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.rev{
+    font-style: oblique;
+    color: rgb(202, 112, 112);
+    font-family: Baskervville, sans-serif;
+    font-size: 90px;
+    text-decoration: underline;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+    margin-bottom: 3rem;
+    place-items: center;
+    padding: 20px;
+    grid-column: 1/-1;
+    margin-top: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.sub-heading{
+    font-size: 20px;
+    color: rgb(202, 167, 167);
+    font-weight: 300;
+    justify-self: start;
+    text-align: justify;
+    
+}
+.image1{
+    width: 100%;
+    height: 100%;
+    justify-self: end;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    
+}
+.author{
+    font-size: 2rem;
+    font-family: Raleway, sans-serif;
+    color: rgb(245, 212, 180);
+    justify-self: start;
+}
+.author-name a:hover{
+     color: rgb(99, 119, 136);
+     text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    color: rgb(245, 212, 180);
+}
+.social-icons{
+    display: grid;
+    font-size: 3rem;
+    grid-template-columns: repeat(5, 0.5fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    justify-self: end;
+    column-gap: 2rem;
+}
+.social-icons a:hover{
+    color: rgb(206, 36, 36);
+}
+.width{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 5px 30px; 
+}
+.text-with-images{
+    display: grid;
+    column-gap: 3rem;
+    margin-bottom: 3rem;
+    grid-template-columns: 1fr 3fr;
+    place-items: center;
+    padding: 20px;
+    grid-column: 2/3;
+    margin-top: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+hr{
+    margin: 1rem;
+    border: 1px solid rgb(102, 96, 96);
+}
+.quote{
+    color: #00beef;
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+}
+.quote::before{
+    content:'" ';
+}
+.quote::after{
+    content:' "';
+}
+.image-wrapper{
+    display: grid;
+    margin-top: 3rem;
+    row-gap: 3rem;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(3, min-content);
+}
+.history{
+    font-size: 1.8rem;
+    text-align: justify;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+    column-width: 27rem;
+    justify-self: end;
+}
+.foot{
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    width: 70%;
+}
+.link{
+    justify-self: start;
+    padding-left: 20px;
+}
+.foot a:hover{
+    color: rgb(223, 118, 118);
+    text-decoration: underline;
+}
+.pg{
+    text-align: center;
+}
+@media only screen and (max-width: 720px){
+    .text-with-images{
+        grid-template-columns: 1fr;
+    }
+    .image-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .history{
+        font-size: 1.6rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .width{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 550px){
+    .heading{
+        font-size: 6rem;
+    }
+    .hero{
+        font-size: 1.8rem;
+    }
+}
